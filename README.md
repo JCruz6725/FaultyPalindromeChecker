@@ -1,7 +1,7 @@
 # FaultyPalindromeChecker
 
-##Debugging Challenge: Faulty Palindrome Checker (C#)
-###Submission Rules
+## Debugging Challenge: Faulty Palindrome Checker (C#)
+### Submission Rules
 1. Modify only the provided function
  - Only edit code within the IsPalindrome method
  - Do NOT change method signature (public static bool IsPalindrome(string s))
