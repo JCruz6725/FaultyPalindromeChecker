@@ -26,7 +26,7 @@
 
         public static void Render(TestCase test, int itter) {
             Console.WriteLine($"***** * Test {itter} * *****");
-            Console.WriteLine($"Palindrome: {test.Palindrome}");
+            Console.WriteLine($"Palindrome: \"{test.Palindrome}\"");
             Console.WriteLine($"Expected result: {test.Expected}");
             if(test.error is null) {
                 Console.WriteLine($"Test results: {test.Results}");
@@ -37,6 +37,17 @@
                 Console.WriteLine(test.error.Message);
                 Console.WriteLine(test.error.StackTrace);
             }
+
+
+            Console.WriteLine();
+            if(test.IsValid()) {
+                Console.WriteLine("\tTest passed!");
+            }
+            else {
+                Console.WriteLine("\tTest failed!");
+            }
+            Console.WriteLine();
+            
             Console.WriteLine("***********************");
             Console.WriteLine();
         }
