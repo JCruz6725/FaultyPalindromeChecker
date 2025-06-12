@@ -11,6 +11,7 @@ namespace FaultyPalindromeChecker {
                 new(){Palindrome = "empty", Expected =  false },
                 new(){Palindrome = "a", Expected =  true },
                 new(){Palindrome = "", Expected =  true },
+                new(){Palindrome = "Ma..da?m!", Expected =  true },
             };
             TestRunner.Run(testCases);
             TestRunner.Render(testCases);   

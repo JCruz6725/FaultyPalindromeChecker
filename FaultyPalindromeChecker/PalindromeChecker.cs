@@ -9,6 +9,14 @@
 
             while (left < right)
             {
+                //Skip non-letter characters
+                while(!char.IsLetter(s[left])) {
+                    left++;
+                }
+                while(!char.IsLetter(s[right])) {
+                    right--;
+                } 
+                
                 if (s[left] != s[right])
                     return false;
                 left++;
